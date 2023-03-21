@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "dev" :"nodemon src/server.js"
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/GSG-G13/autocomplete-ahmed-shatha/issues"
   },
-  "homepage": "https://github.com/GSG-G13/autocomplete-ahmed-shatha#readme"
+  "homepage": "https://github.com/GSG-G13/autocomplete-ahmed-shatha#readme",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
