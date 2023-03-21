@@ -38,4 +38,4 @@ const handleReadingFile = (res, filepath, encoding, fileType) => {
   });
 };
 
-module.exports = { send, handleServerError };
+module.exports = { send, handleServerError, handleReadingFile };
