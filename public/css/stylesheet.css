@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+:root {
+  --primary-color: #173a39;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+
+header h1 {
+  color: var(--primary-color);
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul li {
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #111;
+}
+
+header ul li:hover {
+  color: var(--primary-color);
+}
+
+header ul li.active {
+  color: var(--primary-color);
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.search-section .container {
+  width: 35%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px #ccc9c9;
+}
+
+.search-section .container > div:nth-child(1) {
+  position: relative;
+}
+
+.search-section .container input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 1rem 4rem 1rem 2rem;
+  font-size: 1rem;
+}
+
+.search-section .container > div:nth-child(1) i {
+  position: absolute;
+  color: var(--primary-color);
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
