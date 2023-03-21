@@ -1,0 +1,24 @@
+{
+  "name": "autocomplete-ahmed-shatha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev" :"nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G13/autocomplete-ahmed-shatha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G13/autocomplete-ahmed-shatha/issues"
+  },
+  "homepage": "https://github.com/GSG-G13/autocomplete-ahmed-shatha#readme"
+}
