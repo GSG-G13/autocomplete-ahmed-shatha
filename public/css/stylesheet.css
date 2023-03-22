@@ -77,6 +77,43 @@ header ul li.active {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.search-section .container .results .card {
+  position: relative;
+  border-bottom: solid #b0b0b0 1px;
+}
+
+.search-section .container .results .card:last-child {
+  border: 0;
+}
+
+.search-section .container .results .card:first-child {
+  border-top: solid #b0b0b0 1px;
+}
+
+.container .results .card p {
+  color: #7e7e7e;
+  padding: 1rem 2.1rem;
+  text-transform: capitalize;
+}
+
+.container .results .card button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 12%;
+  background-color: var(--primary-color);
+  color: #eee;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.container .results .card button:hover {
+  width: 20%;
+}
+
 /* Modal Container Style  */
 
 .upmodal {
