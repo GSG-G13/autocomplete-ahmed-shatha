@@ -1,4 +1,5 @@
 const { send, handleReadingFile, useStatic } = require("./utils");
+const searchRoute = require("./search");
 const path = require("path");
 const fs = require("fs");
 const router = (req, res) => {
@@ -16,8 +17,14 @@ const router = (req, res) => {
   } else if (endpoint === "/js/fetch.js") {
     const filePath = useStatic("js/fetch.js");
     handleReadingFile(res, filePath, "utf-8", "text/javascript");
-  } else {
+  }
+  else if(endpoint.includes('search')){
+    searchRoute(req, res);
+    
+  }
+   else {
     send(res, 404, "text/html", "NOT FOUND");
+    console.log(endpoint);
   }
 };
 module.exports = router;

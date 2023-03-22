@@ -2,7 +2,7 @@ const http = require("http");
 const colors = require("colors");
 const router = require("./router.js")
 
-const PORT = 5000;
+const PORT =  process.env.PORT || 4000;
 
 const server = http.createServer(router);
 
