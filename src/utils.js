@@ -37,8 +37,12 @@ const handleReadingFile = (res, filepath, encoding, fileType) => {
   });
 };
 
+/*
+@params {string} file - file name
+@desc - returns the path to the file
+*/
 const useStatic = (file) => {
   const filePath = path.join(__dirname, "..", "public", file);
   return filePath;
 };
-module.exports = { send, handleServerError, handleReadingFile , useStatic };
+module.exports = { send, handleServerError, handleReadingFile, useStatic };
