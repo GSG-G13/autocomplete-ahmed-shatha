@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 
 /*
 @params {object} res - response object
@@ -16,8 +17,6 @@ const send = (res, statusCode, cType, message) => {
 @params {object} res - response object
 */
 const handleServerError = (res, err) => {
-  const error = { ...err };
-  console.log(err.statusCode); //
   send(res, 500, "text/plain", "server error");
 };
 
@@ -38,4 +37,8 @@ const handleReadingFile = (res, filepath, encoding, fileType) => {
   });
 };
 
-module.exports = { send, handleServerError, handleReadingFile };
+const useStatic = (file) => {
+  const filePath = path.join(__dirname, "..", "public", file);
+  return filePath;
+};
+module.exports = { send, handleServerError, handleReadingFile , useStatic };
