@@ -20,7 +20,9 @@ const searchRoute = (req, res) => {
       if (search) {
         for (let key in jsonData) {
           if (jsonData[key].match(out))
+ 
             result.push({ id: key, title: jsonData[key] });
+
         }
       }
       send(res, 200, "application/json", result);

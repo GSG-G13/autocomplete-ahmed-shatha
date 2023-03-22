@@ -5,6 +5,8 @@ const fs = require("fs");
 const router = (req, res) => {
   const endpoint = req.url;
   const method = req.method;
+  
+
   if (endpoint === "/") {
     const filePath = useStatic("index.html");
     handleReadingFile(res, filePath, "utf-8", "text/html");
@@ -19,12 +21,12 @@ const router = (req, res) => {
     handleReadingFile(res, filePath, "utf-8", "text/javascript");
   }
   else if(endpoint.includes('search')){
+
     searchRoute(req, res);
     
   }
    else {
     send(res, 404, "text/html", "NOT FOUND");
-    console.log(endpoint);
   }
 };
 module.exports = router;
