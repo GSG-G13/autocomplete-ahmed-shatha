@@ -24,7 +24,7 @@ const router = (req, res) => {
   }
    else {
     send(res, 404, "text/html", "NOT FOUND");
-    console.log(endpoint);
+  
   }
 };
 module.exports = router;
