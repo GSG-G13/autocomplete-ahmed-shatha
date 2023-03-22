@@ -51,13 +51,6 @@ const renderDetails = ({ volumeInfo }) => {
 };
 
 const addEventListeners = () => {
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      spinner.style.opacity = "0";
-      spinner.style.display = "none";
-    }, 2000);
-  });
-
   btnClose.addEventListener("click", () => {
     document.querySelector(".upmodal").removeAttribute("show");
   });
