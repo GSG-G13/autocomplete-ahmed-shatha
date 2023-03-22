@@ -27,6 +27,6 @@
     <img src="https://img.icons8.com/color/48/000000/nodejs.png" width="50" height="50"/>
     <!-- npm -->
     <img src="https://img.icons8.com/color/48/000000/npm.png" width="50" height="50"/>
-    <!-- render -->
-    <img src="https://img.icons8.com/color/48/000000/render.png" width="50" height="50"/>
+   
+    
 </p>
